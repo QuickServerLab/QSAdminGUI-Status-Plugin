@@ -1,0 +1,7 @@
+<qsadmin-plugin>
+	<name>Stats</name>
+	<desc>Server Status Panel</desc>
+	<type>javax.swing.JPanel</type>
+	<main-class>org.quickserver.net.qsadmin.plugin.stats.StatsPanel</main-class>
+	<enabled>yes</enabled>
+</qsadmin-plugin>

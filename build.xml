@@ -1,0 +1,46 @@
+<project name="QuickServer.Status.Plugin" default="jar" basedir=".">    	
+	<property name="plugin.dir"  value="./plugin" />
+	<property name="plugin.name"  value="Status" />
+
+	<property name="build.dir"  value="${plugin.dir}/${plugin.name}/build/classes" />
+	<property name="src.dir" value="${plugin.dir}/${plugin.name}/src" />
+
+	<path id="project.classpath">
+		<fileset dir="./dist/">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${plugin.dir}/${plugin.name}/lib/">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="help">
+		<echo>
+Build for Stats plugin
+
+Available targets:
+     compile         Compiles the main source
+     jar             Creates main jar file.
+		</echo>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+	</target>
+
+	<target name="compile">
+		<mkdir dir="${build.dir}"/>
+		<javac srcdir="${src.dir}/" destdir="${build.dir}" includeantruntime="false">
+			<include name="**/*.java"/>
+			<classpath refid="project.classpath"/>
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile">
+        	<jar jarfile="${plugin.dir}/${plugin.name}/Stats.jar"
+        	     basedir="${build.dir}" includes="**">
+		</jar>
+    	</target>
+
+</project>
+
