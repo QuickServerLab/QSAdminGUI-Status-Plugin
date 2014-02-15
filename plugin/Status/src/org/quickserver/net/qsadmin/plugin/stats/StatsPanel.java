@@ -1,6 +1,6 @@
 /*
  * This file is part of the QuickServer library 
- * Copyright (C) 2003-2005 QuickServer.org
+ * Copyright (C) QuickServer.org
  *
  * Use, modification, copying and distribution of this software is subject to
  * the terms and conditions of the GNU Lesser General Public License. 
@@ -183,7 +183,7 @@ public class StatsPanel extends JPanel implements PluginPanel {
 }
 
 class GetStats extends Thread {
-	private static Logger logger =  
+	private static final Logger logger =  
 		Logger.getLogger(GetStats.class.getName());
 
 	private StatsPanel statsPanel;

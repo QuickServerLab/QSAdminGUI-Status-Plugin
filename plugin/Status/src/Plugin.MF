@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Class-Path: ./lib/jcommon-0.8.9.jar ./lib/jfreechart-0.9.14.jar
+Specification-Title: QuickServer
+Specification-Version: 2.0
+Implementation-Version: 2.0.0
+Library-Author: Akshathkumar Shetty
+Library-Copyrigth: QuickServer.org
+Library-HomePage: http://www.quickserver.org

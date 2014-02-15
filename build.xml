@@ -16,11 +16,11 @@
 
 	<target name="help">
 		<echo>
-Build for Stats plugin
+			Build for Stats plugin
 
-Available targets:
-     compile         Compiles the main source
-     jar             Creates main jar file.
+			Available targets:
+			compile         Compiles the main source
+			jar             Creates main jar file.
 		</echo>
 	</target>
 
@@ -37,10 +37,10 @@ Available targets:
 	</target>
 
 	<target name="jar" depends="compile">
-        	<jar jarfile="${plugin.dir}/${plugin.name}/Stats.jar"
-        	     basedir="${build.dir}" includes="**">
+		<jar jarfile="${plugin.dir}/${plugin.name}/Stats.jar"
+				 basedir="${build.dir}" includes="**" manifest="${src.dir}/Plugin.MF">
 		</jar>
-    	</target>
+	</target>
 
 </project>
 
