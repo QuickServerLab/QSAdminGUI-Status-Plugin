@@ -7,6 +7,7 @@ This will work with QuickServer v1.4.6 or above.
 The directory structure needed for getting plugin loaded is
 given below 
 
+<pre>
  +quickserver (installation dir)
    |
    +bin
@@ -16,7 +17,7 @@ given below
    +plugin
      |
      +Stats (folder to place all jars and plugin.xml files of Stats Plugin)
-
+</pre>
 
 When QsAdmin GUI is stated it will look into any directory in 
 "plugin" folder for any plugin and load it.
