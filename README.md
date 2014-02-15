@@ -1,5 +1,5 @@
-Stats Plugin for QSAdminGUI v1.1
---------------------------------------------
+Stats Plugin for QSAdminGUI v2.0
+--------------------------------
 
 Stats Plugin is a simple plugin written for QSAdmin of QuickServer.
 This will work with QuickServer v1.4.6 or above. 
@@ -41,8 +41,8 @@ JCommon v 0.8.9 or later
 License : GNU Lesser General Public License
 
 
-Date : 16 Oct 2005
+Date : 15 Feb 2014
 ---------------------
 
-Copyright (C) 2003-2005 Akshathkumar Shetty
+Copyright (C) 2003-2014 QuickServer.org
 http://www.quickserver.org
